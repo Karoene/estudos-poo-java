@@ -5,6 +5,7 @@ import dev.karoene.estudosjavabasico.models.*;
 public class ShoppingCart {
     private int quantItens;
     private int sellID;
+    private PromotionalProduct[] produtos = new PromotionalProduct[10];
 
     public ShoppingCart(int sellID){
         this.sellID = sellID;
