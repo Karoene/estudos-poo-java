@@ -11,3 +11,6 @@ Conceitos:
 - Classe Abstrata
 - Encapsulamento
 
+E também lógica:
+- Exceções
+- Lambdas
