@@ -13,9 +13,10 @@ public class MainTest {
         //Aqui eu estaria recuperando todos os produtos cadastrado no banco de produtos
 
         ShoppingCart cart = new ShoppingCart(1);
-
+        cart.showCart();
         cart.add(livro2);
         cart.add(livro1);
+        cart.add(livro3);
         cart.showCart();
 
     }

@@ -1,10 +1,9 @@
 package dev.karoene.estudosjavabasico.store;
 
-import dev.karoene.estudosjavabasico.models.*;
-
 public class ShoppingCart {
-    private int quantItens;
+    private int quantItens = 0;
     private int sellID;
+    private double totalPrice;
     private PromotionalProduct[] produtos = new PromotionalProduct[5];
 
     public ShoppingCart(int sellID){
@@ -23,23 +22,28 @@ public class ShoppingCart {
     }
 
 
-    public boolean add(PromotionalProduct produto){
+    public void add(PromotionalProduct produto){
         for(int i = 0; i < produtos.length; i++){
             if(produtos[i] == null){
                 produtos[i] = produto;
+                System.out.println("inserido");
+                quantItens++;
+                totalPrice += produto.price();
                 break;
-            }else{
-                System.out.println("Carrinho com capacidade maxima");
-            }
+            }else if (quantItens >= produtos.length) {
+                System.out.println("Carrinho cheio");
+                break;
+            }             
         }
-        return true;
+        
     }
     public void showCart(){
         for (PromotionalProduct obj: produtos){
             System.out.println(obj);
-
         }
+        System.out.println("Total da compra: " + totalPrice);
     }
+    
 
 
 }

@@ -30,4 +30,9 @@ public class LivroDigital extends Livro implements PromotionalProduct {
         super.printFormattedData();
         System.out.println("size: " + getFileSizeMB());
     }
+
+    @Override
+    public double price() {
+        return getPrice();
+    }
 }
