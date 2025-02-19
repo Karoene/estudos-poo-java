@@ -37,4 +37,9 @@ public class LivroFisico extends Livro implements PromotionalProduct {
         return 0;
     }
 
+    @Override
+    public double price() {
+        return getPrice();
+    }
+
 }

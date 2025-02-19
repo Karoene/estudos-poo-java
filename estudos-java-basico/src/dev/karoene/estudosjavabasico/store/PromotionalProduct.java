@@ -9,5 +9,6 @@ public interface PromotionalProduct {
     default void teste(){
         System.out.println("Desconto aplicado");
     }
+    double price();
 }
 
