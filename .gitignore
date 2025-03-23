@@ -1,4 +1,6 @@
 out/
-estudos-poo-java.iml
+
  .idea/
  *.xml
+*.iml
+estudos-java-poo.iml
