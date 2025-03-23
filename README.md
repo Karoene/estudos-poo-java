@@ -12,5 +12,6 @@ Conceitos:
 - Encapsulamento
 
 E também lógica:
+- estruturas de dados (hashmap, lists)
 - Exceções
 - Lambdas

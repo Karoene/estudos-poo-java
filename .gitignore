@@ -6,3 +6,5 @@ out/
  *.xml
 *.iml
 estudos-java-poo.iml
+*.class
+/src/dev/*.class
